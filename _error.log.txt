@@ -1,5 +1,6 @@
 [E:\Source Code\nesswalk\_error.log.txt]
 
-AngelScript ERROR (E:\Source Code\nesswalk\main.angelscript line 35): 
-Expression is not an l-value
+AngelScript ERROR (E:\Source Code\nesswalk\GameScene.angelscript line 10): 
+Base class doesn't have default constructor. Make explicit call to base constructor
 ERROR - Failed while building module.
+ERROR - ETHEngine::StartEngine: the script has set no scene to load.

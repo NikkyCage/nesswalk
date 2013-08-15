@@ -8,6 +8,7 @@ class GameScene : Scene
 
 	GameScene()
 	{
+		//const string sceneName = "scenes/scenegrass.esc";
 		const string sceneName = "empty";
 		super(sceneName);
 	}
@@ -15,9 +16,11 @@ class GameScene : Scene
 	void onCreated()
 	{
 		@m_exitButton = Button("sprites/return_button.png", vector2(0.0f, 0.0f), vector2(0.0f, 0.0f));
-
+		
 		const vector2 screenMiddle(GetScreenSize() * 0.5f);
+		//AddEntity("grass.ent", vector3(screenMiddle, 0.0f));
 		@m_character = Character("ness.ent", screenMiddle);
+		
 	}
 
 	void onUpdate()
