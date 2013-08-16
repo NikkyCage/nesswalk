@@ -16,21 +16,19 @@ class Character
 	{
 		ETHInput@ input = GetInputHandle();
 		vector2 direction(0, 0);
-		//vector2 
 
 		// find current move direction based on keyboard keys
 		if (input.KeyDown(K_LEFT))
 		{
 			m_directionLine = 3;
 			direction += vector2(-1, 0);
-			//SetCameraPos += vector2(20.0f, 20.0f);
-			AddToCameraPos(direction += direction);
+			//AddToCameraPos(direction += direction);
 		}
 		if (input.KeyDown(K_RIGHT))
 		{
 			m_directionLine = 5;
 			direction += vector2(1, 0);
-			AddToCameraPos(direction += direction);
+			//AddToCameraPos(direction += direction);
 		}
 		if (input.KeyDown(K_UP))
 		{
@@ -38,19 +36,19 @@ class Character
 			{
 				m_directionLine = 4;
 				direction += vector2(-1, -1);
-				AddToCameraPos(direction);
+				//AddToCameraPos(direction);
 			}
 			else
 			if (input.KeyDown(K_RIGHT))
 			{
 				m_directionLine = 6;
 				direction += vector2(1, -1);
-				AddToCameraPos(direction += direction);
+				//AddToCameraPos(direction += direction);
 			}
 			else
 			m_directionLine = 7;
 			direction += vector2(0,-1);
-			AddToCameraPos(direction += direction);
+			//AddToCameraPos(direction += direction);
 		}
 		if (input.KeyDown(K_DOWN))
 		{
@@ -58,19 +56,19 @@ class Character
 			{
 				m_directionLine = 0;
 				direction += vector2(-1, 1);
-				AddToCameraPos(direction += direction);
+				//AddToCameraPos(direction += direction);
 			}
 			else
 			if (input.KeyDown(K_RIGHT))
 			{
 				m_directionLine = 2;
 				direction += vector2(1, 1);
-				AddToCameraPos(direction += direction);
+				//AddToCameraPos(direction += direction);
 			}
 			else
 			m_directionLine = 1;
 			direction += vector2(0, 1);
-			AddToCameraPos(direction += direction);
+			//AddToCameraPos(direction += direction);
 		}
 
 		// if there's movement, update animation
