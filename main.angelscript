@@ -2,9 +2,7 @@
 #include "SceneManager.angelscript"
 #include "MainMenuScene.angelscript"
 #include "GameScene.angelscript"
-//#include "constants.angelscript"
-//#include "util.angelscript"
-//#include "CameraManager.angelscript"
+#include "Collide.angelscript"
 
 dictionary g_frameTimers;
 //enmlFile g_gameData;

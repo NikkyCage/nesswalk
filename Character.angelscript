@@ -6,6 +6,7 @@ class Character
 
 	private FrameTimer m_frameTimer;
 	private uint m_directionLine = 0;
+	
 
 	Character(const string &in entityName, const vector2 pos)
 	{
@@ -16,19 +17,20 @@ class Character
 	{
 		ETHInput@ input = GetInputHandle();
 		vector2 direction(0, 0);
+		bool hasMoved = false;
 
 		// find current move direction based on keyboard keys
 		if (input.KeyDown(K_LEFT))
 		{
 			m_directionLine = 3;
 			direction += vector2(-1, 0);
-			//AddToCameraPos(direction += direction);
+			hasMoved = true;
 		}
 		if (input.KeyDown(K_RIGHT))
 		{
 			m_directionLine = 5;
 			direction += vector2(1, 0);
-			//AddToCameraPos(direction += direction);
+			hasMoved = true;
 		}
 		if (input.KeyDown(K_UP))
 		{
@@ -36,19 +38,19 @@ class Character
 			{
 				m_directionLine = 4;
 				direction += vector2(-1, -1);
-				//AddToCameraPos(direction);
+				//hasMoved = true;
 			}
 			else
 			if (input.KeyDown(K_RIGHT))
 			{
 				m_directionLine = 6;
 				direction += vector2(1, -1);
-				//AddToCameraPos(direction += direction);
+				//hasMoved = true;
 			}
 			else
 			m_directionLine = 7;
 			direction += vector2(0,-1);
-			//AddToCameraPos(direction += direction);
+			hasMoved = true;
 		}
 		if (input.KeyDown(K_DOWN))
 		{
@@ -56,19 +58,23 @@ class Character
 			{
 				m_directionLine = 0;
 				direction += vector2(-1, 1);
-				//AddToCameraPos(direction += direction);
+				//hasMoved = true;
 			}
 			else
 			if (input.KeyDown(K_RIGHT))
 			{
 				m_directionLine = 2;
 				direction += vector2(1, 1);
-				//AddToCameraPos(direction += direction);
+				//hasMoved = true;
 			}
 			else
 			m_directionLine = 1;
 			direction += vector2(0, 1);
-			//AddToCameraPos(direction += direction);
+			hasMoved = true;
+		}
+		if(hasMoved)
+		{
+			SetCameraPos(m_entity.GetPositionXY()-(GetScreenSize()/2));
 		}
 
 		// if there's movement, update animation
@@ -78,9 +84,11 @@ class Character
 			m_frameTimer.update(0, 0, 150);
 
 		// update entity
-		const float speed = 2.0f;
+		const float speed = 2.2f;
 		const uint currentFrame = m_frameTimer.getCurrentFrame();
 		m_entity.AddToPositionXY(normalize(direction) * speed);
 		m_entity.SetFrame(currentFrame, m_directionLine);
 	}
+	
+
 }

@@ -1,9 +1,13 @@
 [E:\Source Code\nesswalk\eth.log.txt]
 Backbuffer created as 1024, 768 on default backbuffer mode
 Loading game script from source-code: main.angelscript
-Compile time: 16 milliseconds
+Compile time: 0 milliseconds
 (Loaded) start_game.png
 (Loaded) quit_game.png
 (Loaded) grassbg.jpg
+(Loaded) frank.png
+(Loaded) bar3_contrast.png
+(Loaded) bar3_nm.png
+(Loaded) grass.jpg
 (Loaded) return_button.png
 (Loaded) ness_walk.png

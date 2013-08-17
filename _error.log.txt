@@ -1,66 +1,6 @@
 [E:\Source Code\nesswalk\_error.log.txt]
 
-AngelScript ERROR (E:\Source Code\nesswalk\constants.angelscript line 1): 
-Expected identifier
-
-AngelScript ERROR (E:\Source Code\nesswalk\util.angelscript line 3): 
-Expected identifier
-
-AngelScript ERROR (E:\Source Code\nesswalk\util.angelscript line 7): 
-Expected '('
-
-AngelScript ERROR (E:\Source Code\nesswalk\util.angelscript line 10): 
-Expected '('
-
-AngelScript ERROR (E:\Source Code\nesswalk\util.angelscript line 14): 
-Expected '('
-
-AngelScript ERROR (E:\Source Code\nesswalk\util.angelscript line 20): 
-Expected ',' or ';'
-
-AngelScript ERROR (E:\Source Code\nesswalk\util.angelscript line 34): 
-Expected '('
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 3): 
-Expected one of: get, set, }
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 101): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 106): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 107): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 108): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 109): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 110): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 111): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 112): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 113): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 114): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 115): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 116): 
-Unexpected token 'private'
-
-AngelScript ERROR (E:\Source Code\nesswalk\CameraManager.angelscript line 117): 
-Unexpected token '}'
+AngelScript ERROR (E:\Source Code\nesswalk\Character.angelscript line 81): 
+Expected expression value
 ERROR - Failed while building module.
 ERROR - ETHEngine::StartEngine: the script has set no scene to load.

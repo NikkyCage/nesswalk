@@ -13,6 +13,9 @@ class MainMenuScene : Scene
 
 	void onCreated()
 	{
+		//bool showCursor = false;
+		//HideCursor(showCursor);
+	
 		const vector2 screenMiddle(GetScreenSize() * 0.5f);
 
 		@m_startGameButton = Button("sprites/start_game.png", screenMiddle);
