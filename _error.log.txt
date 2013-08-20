@@ -1,6 +1,6 @@
 [E:\Source Code\nesswalk\_error.log.txt]
 
-AngelScript ERROR (E:\Source Code\nesswalk\Character.angelscript line 81): 
-Expected expression value
+AngelScript ERROR (E:\Source Code\nesswalk\GameScene.angelscript line 32): 
+No matching signatures to 'AddEntity(string, vector2, const vector2)'
 ERROR - Failed while building module.
 ERROR - ETHEngine::StartEngine: the script has set no scene to load.

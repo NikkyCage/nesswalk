@@ -84,10 +84,17 @@ class Character
 			m_frameTimer.update(0, 0, 150);
 
 		// update entity
-		const float speed = 2.2f;
+		const float walk = 2.5f;
+		const float run = 5.0f;
 		const uint currentFrame = m_frameTimer.getCurrentFrame();
-		m_entity.AddToPositionXY(normalize(direction) * speed);
+		m_entity.AddToPositionXY(normalize(direction) * walk);
 		m_entity.SetFrame(currentFrame, m_directionLine);
+		
+		if (input.KeyDown(K_SHIFT))
+		{
+			m_entity.AddToPositionXY(normalize(direction) * run);
+			m_entity.SetFrame(currentFrame, m_directionLine);
+		}
 	}
 	
 
